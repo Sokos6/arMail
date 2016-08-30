@@ -21,10 +21,12 @@
             {{message.sender}}
         </td>
         <td>
-            {{message.subject}}
+            <a ui-sref="message({id:message.id})">
+                {{message.subject}}
+            </a>
         </td>
         <td>
-            {{message.date}}
+            {{message.date | date}}
         </td>
     </tr>
 </table>
